@@ -13,10 +13,7 @@
         height: auto;
     }
 
-    /* Choose Tutor Section */
-    .choose-tutor-card {
-        height: 250px;
-    }
+    
     
     .section-title {
         font-size: 2rem;
@@ -68,21 +65,18 @@
         flex-direction: column;
     }
 
-    .tutor-section .col-lg-6:first-child {
+    .tutor-section .image-main:first-child {
         order: 2;
     }
 
-    .tutor-section .col-lg-6:last-child {
+    .tutor-section .content-main:last-child {
         order: 1;
     }
 }
 
 /* Medium devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* Choose Tutor Section */
-    .choose-tutor-card {
-        height: 200px;
-    }
+   
     
     .card-title {
         font-size: 1.25rem;
