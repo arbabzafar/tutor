@@ -1,100 +1,370 @@
-/* Hero Section Styles */
-.hero-section {
-    background-color: #f8f9fa;
-    position: relative;
-    overflow: hidden;
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Primary Colors */
+    --primary-green: #238a83;
+    --primary-dark-green: #037971;
+    --primary-turquoise: #04e3d6;
+    
+    /* Text Colors */
+    --text-dark: #333;
+    --text-gray: #666;
+    
+    /* Background Colors */
+    --bg-light: #f8f9fa;
+    --bg-white: #fff;
+    
+    /* Overlay Colors */
+    --overlay-gradient: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    --overlay-text: rgba(255, 255, 255, 0.8);
+    
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --feature-icon-bg: rgba(4, 227, 214, 0.1);
+
+    /* Font Families */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    background-color: #00BFA6;
-    border-radius: 0 0 0 100px;
-    z-index: 0;
+/* Apply fonts to elements */
+body {
+    font-family: var(--font-body);
 }
 
-.hero-section .container {
-    position: relative;
-    z-index: 1;
+h1, h2, .section-title {
+    font-family: var(--font-heading);
 }
 
-/* Text Styles */
-.hero-section h1 {
-    font-weight: 700;
-    color: #333;
+p, .card-text, .feature-content p, .tutor-content p {
+    font-family: var(--font-body);
 }
 
-.hero-section .text-primary {
-    color: #00BFA6 !important;
+.text-green {
+    color: var(--primary-green);
+}
+.bg-green{
+    background-color: var(--primary-dark-green);
 }
 
-/* Search Bar Styles */
-.search-bar .input-group {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.font-size-20 {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1%;
+}
+
+.bg-main {
+    background-image: url(../images/section1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.hero-content {
+    color: var(--text-dark);
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hero-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.search-box {
+    border-radius: 10px;
+}
+.search-box .form-control {
+    padding: 0.8rem 1.2rem;
     border-radius: 8px;
-    overflow: hidden;
-}
-
-.search-bar .form-control {
     border: none;
-    padding: 15px 20px;
+    background-color: transparent;
+}
+.search-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-turquoise);
+    border-radius: 10px;
+  
+}
+.search-icon-img {
+    width: 15px;
+    height: 15px;
 }
 
-.search-bar .btn-primary {
-    background-color: #00BFA6;
-    border-color: #00BFA6;
-    padding: 15px 30px;
-}
 
-/* Available Tutors Section */
+.min-vh-75 {
+    min-height: 75vh;
+}
+.text-info{
+    color: var(--primary-turquoise);
+}   
+
 .available-tutors {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    max-width: 280px;
 }
 
 .tutor-avatars {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    position: relative;
 }
 
-.avatar {
+.tutor-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid white;
-    object-fit: cover;
+    border: 2px solid #fff;
+    margin-left: -10px;
+}
+
+.tutor-avatar:first-child {
+    margin-left: 0;
 }
 
 .more-tutors {
-    font-size: 14px;
-    color: #666;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-turquoise);
+    margin-left: -10px;
+    font-size: 0.75rem;
 }
 
-/* Hero Image */
-.hero-image {
-    border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+.tutor-text {
+    font-size: 0.875rem;
+    color: var(--text-gray);
+}
+.plus-icon {
+    width: 20px;
+}
+.tutor-section {
+    padding: 4rem 0;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 991.98px) {
-    .hero-section::before {
-        width: 100%;
-        border-radius: 0 0 50px 50px;
-    }
-    
-    .hero-section .row {
-        text-align: center;
-    }
-    
-    .available-tutors {
-        justify-content: center;
-        align-items: center;
-    }
+.tutor-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.tutor-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.choose-tutor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.choose-tutor-card{
+    position: relative;
+}
+.choose-tutor-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Choose Tutor Section Styles */
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-family: var(--font-body);
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.choose-tutor-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.choose-tutor-card:hover {
+    transform: translateY(-5px);
+}
+
+.choose-tutor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: var(--overlay-gradient);
+}
+
+.choose-tutor-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--overlay-text);
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.view-all-btn {
+    padding: 0.75rem 2.5rem;
+    border: 2px solid var(--primary-dark-green);
+     border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.view-all-btn:hover {
+    background-color: var(--primary-dark-green);
+    color: var(--bg-white);
+}
+
+/* Why Choose Section Styles */
+.why-choose-section {
+    background-color: var(--bg-light);
+}
+
+.feature-card {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--bg-white);
+    border-radius: 15px;
+    box-shadow: 0 2px 15px var(--shadow-light);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--feature-icon-bg);
+    border-radius: 12px;
+}
+
+.feature-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.feature-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.feature-content p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 0;
+}
+
+.center-image {
+    padding: 2rem;
+    text-align: center;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.get-started-btn {
+    padding: 0.75rem 2.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Tutor Section Styles */
+.tutor-section {
+    padding: 4rem 0;
+}
+
+.tutor-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.tutor-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tutor-content {
+    padding: 1rem;
+}
+
+.tutor-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.tutor-content p {
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }

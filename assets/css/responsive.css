@@ -1,0 +1,186 @@
+/* Media Queries for All Sections */
+
+/* Large devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* Hero Section */
+    .bg-main {
+        height: auto;
+    }
+
+    /* Choose Tutor Section */
+    .choose-tutor-card {
+        height: 250px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Why Choose Section */
+    .why-choose-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-choose-section .col-lg-4:first-child {
+        order: 1;
+    }
+
+    .why-choose-section .col-lg-4:last-child {
+        order: 2;
+    }
+
+    .why-choose-section .col-lg-4:nth-child(2) {
+        order: 3;
+    }
+
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+    
+    .center-image {
+        padding: 2rem 0;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .section-subtitle br {
+        display: none;
+    }
+
+    /* Tutor Section */
+    .tutor-section {
+        padding: 3rem 0;
+    }
+
+    .tutor-content h2 {
+        font-size: 2rem;
+    }
+
+    .tutor-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tutor-section .col-lg-6:first-child {
+        order: 2;
+    }
+
+    .tutor-section .col-lg-6:last-child {
+        order: 1;
+    }
+}
+
+/* Medium devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Choose Tutor Section */
+    .choose-tutor-card {
+        height: 200px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    /* Why Choose Section */
+    .feature-card {
+        padding: 1rem;
+    }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+    
+    .feature-icon img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .feature-content h3 {
+        font-size: 1rem;
+    }
+    
+    .feature-content p {
+        font-size: 0.85rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        color: var(--text-gray);
+    }
+
+    /* Tutor Section */
+    .tutor-section {
+        padding: 2rem 0;
+    }
+
+    .tutor-content {
+        padding: 0;
+    }
+
+    .tutor-content h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .tutor-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    .tutor-image {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+/* Small devices (small phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Why Choose Section */
+    .center-image {
+        padding: 1.5rem 0;
+    }
+
+    .feature-card {
+        margin-bottom: 0.75rem;
+    }
+
+    .get-started-btn {
+        padding: 0.6rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .get-started-btn:hover {
+        background-color: var(--primary-dark-green);
+        color: var(--bg-white);
+    }
+
+    /* Tutor Section */
+    .tutor-section {
+        padding: 1.5rem 0;
+    }
+
+    .tutor-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .tutor-content p {
+        font-size: 0.9rem;
+    }
+}
