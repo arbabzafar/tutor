@@ -1,5 +1,11 @@
 /* Media Queries for All Sections */
 
+@media only screen and (min-width:991px) {
+        .rightbox{
+            align-items: end !important;
+        }
+}
+
 /* Large devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     /* Hero Section */
@@ -145,7 +151,7 @@
 @media (max-width: 575.98px) {
     /* Hero Section */
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .hero-content h2 {
