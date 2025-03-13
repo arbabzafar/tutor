@@ -1,0 +1,94 @@
+/* Hero Section Styles */
+.bg-main {
+    background-image: url(../images/section1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
+
+.hero-content {
+    color: var(--text-dark);
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hero-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.search-box {
+    border-radius: 10px;
+}
+
+.search-box .form-control {
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+.search-box .form-control:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-turquoise);
+    border-radius: 10px;
+}
+
+.search-icon-img {
+    width: 15px;
+    height: 15px;
+}
+
+.available-tutors {
+    max-width: 280px;
+}
+
+.tutor-avatars {
+    position: relative;
+}
+
+.tutor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -10px;
+}
+
+.tutor-avatar:first-child {
+    margin-left: 0;
+}
+
+.more-tutors {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-turquoise);
+    margin-left: -10px;
+    font-size: 0.75rem;
+}
+
+.tutor-text {
+    font-size: 0.875rem;
+    color: var(--text-gray);
+}
+
+.plus-icon {
+    width: 20px;
+} 

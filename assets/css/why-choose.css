@@ -1,0 +1,64 @@
+/* Why Choose Section Styles */
+.feature-card {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--bg-white);
+    border-radius: 15px;
+    box-shadow: 0 2px 15px var(--shadow-light);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--feature-icon-bg);
+    border-radius: 12px;
+}
+
+.feature-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.feature-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.feature-content p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 0;
+}
+
+.center-image {
+    padding: 2rem;
+    text-align: center;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.get-started-btn {
+    padding: 0.75rem 2.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+} 

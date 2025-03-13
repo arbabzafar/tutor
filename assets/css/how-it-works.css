@@ -1,0 +1,78 @@
+.how-it-works-section {
+    background-color: #fff;
+    position: relative;
+}
+
+.work-step {
+    padding: 20px;
+    position: relative;
+}
+
+.step-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #E8F5F3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.step-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.step-number {
+   margin: 0 auto;
+    color: #00A78B;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.work-step h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.work-step p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Connect steps with dotted line */
+.work-step::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: -50%;
+    width: 100%;
+    border-top: 2px dashed #00A78B;
+    z-index: 0;
+}
+
+.work-step:last-child::after {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .work-step::after {
+        display: none;
+    }
+    
+    .work-step {
+        margin-bottom: 30px;
+    }
+} 
