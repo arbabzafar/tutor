@@ -72,6 +72,21 @@
     .tutor-section .content-main:last-child {
         order: 1;
     }
+
+    /* Become Tutor Section */
+    .become-tutor-section .row {
+        flex-direction: column;
+    }
+
+    .become-tutor-section .col-lg-7 {
+        order: 2;
+        width: 100%;
+    }
+
+    .become-tutor-section .col-lg-5 {
+        order: 1;
+        width: 100%;
+    }
 }
 
 /* Medium devices (phones, less than 768px) */
@@ -139,6 +154,23 @@
         margin-top: 2rem;
         margin-bottom: 0;
     }
+
+    .become-tutor-section {
+        background-position: center right;
+        height: auto;
+    }
+
+    .become-tutor-image {
+        margin-bottom: 1.5rem;
+    }
+
+    .become-tutor-image img {
+        max-width: 90%;
+    }
+
+    .container.p-0.m-0 {
+        padding: 0 15px !important;
+    }
 }
 
 /* Small devices (small phones, less than 576px) */
@@ -182,5 +214,14 @@
 
     .tutor-content p {
         font-size: 0.9rem;
+    }
+
+    .become-tutor-section {
+        background-position: center right 35%;
+        padding: 2rem 0;
+    }
+
+    .become-tutor-image img {
+        max-width: 100%;
     }
 }

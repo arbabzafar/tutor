@@ -1,0 +1,174 @@
+/* Become Tutor Section Styles */
+.become-tutor-section {
+    padding: 4rem 0;
+    background-image: url('../images/become-tutor.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.become-tutor-content {
+    padding: 2rem 4rem;
+}
+
+.become-tutor-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.become-tutor-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.become-tutor-image {
+    position: relative;
+    text-align: right;
+    height: 100%;
+}
+
+.become-tutor-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.apply-btn {
+    padding: 0.75rem 2.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: var(--primary-turquoise);
+    color: var(--bg-white) !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1399.98px) {
+    .become-tutor-content {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .become-tutor-section {
+        min-height: 500px;
+    }
+
+    .become-tutor-content {
+        padding: 2rem;
+    }
+
+    .become-tutor-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .become-tutor-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .become-tutor-section {
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .become-tutor-content {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    /* Reorder columns on mobile */
+    .become-tutor-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .become-tutor-section .col-lg-7 {
+        order: 2;
+    }
+
+    .become-tutor-section .col-lg-5 {
+        order: 1;
+    }
+
+    .become-tutor-image {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .become-tutor-image img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .become-tutor-section {
+        padding: 2.5rem 0;
+        background-size: cover;
+    }
+
+    .become-tutor-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .become-tutor-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .become-tutor-image img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .become-tutor-section {
+        padding: 2rem 0;
+    }
+
+    .become-tutor-content {
+        padding: 1rem;
+    }
+
+    .become-tutor-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .become-tutor-content p {
+        font-size: 0.9rem;
+    }
+
+    .apply-btn {
+        padding: 0.6rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .become-tutor-image img {
+        max-width: 100%;
+    }
+}
+
+/* Additional responsive fixes for very small devices */
+@media (max-width: 380px) {
+    .become-tutor-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .become-tutor-content p {
+        font-size: 0.85rem;
+    }
+
+    .apply-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.85rem;
+    }
+} 
