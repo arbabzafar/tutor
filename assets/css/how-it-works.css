@@ -11,18 +11,16 @@
 .step-icon {
     width: 120px;
     height: 120px;
-    background-color: #E8F5F3;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
     position: relative;
 }
 
 .step-icon img {
-    width: 50px;
-    height: 50px;
+    width: 108px;
     object-fit: contain;
 }
 
@@ -36,7 +34,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .work-step h3 {

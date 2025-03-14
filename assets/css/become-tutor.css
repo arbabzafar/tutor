@@ -118,11 +118,17 @@
     .become-tutor-content h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
+        color: black !important;
     }
+    .become-tutor-content h2 span{
+        color:  black !important;
+    }
+
 
     .become-tutor-content p {
         font-size: 0.95rem;
         margin-bottom: 1.5rem;
+        color: black !important;
     }
 
     .become-tutor-image img {
@@ -141,10 +147,14 @@
 
     .become-tutor-content h2 {
         font-size: 1.75rem;
+        color: black !important;
     }
-
+    .become-tutor-content h2 span{
+        color:  black !important;
+    }
     .become-tutor-content p {
         font-size: 0.9rem;
+        color: black !important;
     }
 
     .apply-btn {
