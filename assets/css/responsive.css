@@ -77,16 +77,6 @@
     .become-tutor-section .row {
         flex-direction: column;
     }
-
-    .become-tutor-section .col-lg-7 {
-        order: 2;
-        width: 100%;
-    }
-
-    .become-tutor-section .col-lg-5 {
-        order: 1;
-        width: 100%;
-    }
 }
 
 /* Medium devices (phones, less than 768px) */
@@ -160,9 +150,6 @@
         height: auto;
     }
 
-    .become-tutor-image {
-        margin-bottom: 1.5rem;
-    }
 
     .become-tutor-image img {
         max-width: 90%;
@@ -218,7 +205,6 @@
 
     .become-tutor-section {
         background-position: center right 35%;
-        padding: 2rem 0;
     }
 
     .become-tutor-image img {
