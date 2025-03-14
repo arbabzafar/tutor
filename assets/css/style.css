@@ -10,7 +10,8 @@
 @import 'become-tutor.css';
 @import 'how-it-works.css';
 @import 'category.css';
-
+@import 'pricing.css';
+@import 'faq.css';
 :root {
     /* Primary Colors */
     --primary-green: #238a83;
@@ -61,7 +62,7 @@ p, .card-text, .feature-content p, .tutor-content p {
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -89,15 +90,7 @@ p, .card-text, .feature-content p, .tutor-content p {
     letter-spacing: 1%;
 }
 
-.bg-main {
-    background-image: url(../images/section1.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    border-radius: 10px;
-    margin: 2rem auto;
-}
+
 .main-container {
     margin: 0 auto;
 }
@@ -233,3 +226,5 @@ p, .card-text, .feature-content p, .tutor-content p {
         text-align: center;
     }
 }
+
+/* Pricing Section Styles */
