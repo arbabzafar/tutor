@@ -12,6 +12,12 @@
 @import 'category.css';
 @import 'pricing.css';
 @import 'faq.css';
+@import 'about-hero.css';
+
+/* Import Stylesheets */
+@import url('about-hero.css');
+@import 'course-listing.css';
+
 :root {
     /* Primary Colors */
     --primary-green: #238a83;
