@@ -416,9 +416,12 @@ h1,h2,h3,h4,h5,h6,p{
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .types-section {
         padding: 25px 0px;
+    }
+    .bg-contact{
+        border-radius: 0px;
     }
     
     .main-heading {
@@ -464,7 +467,8 @@ h1,h2,h3,h4,h5,h6,p{
     }
 
     .decorative-dots {
-        top: 0;
+        top: -9px;
+        width: 56px;
     }
 }
     
