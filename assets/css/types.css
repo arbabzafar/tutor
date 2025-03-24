@@ -227,121 +227,238 @@ h1,h2,h3,h4,h5,h6,p{
     }
 
     /* Responsive Styles */
+    @media (min-width: 1400px) {
+        .main-heading {
+            font-size: 3.5rem;
+        }
+        
+        .sub-heading {
+            font-size: 3.3rem;
+        }
+        
+        .card-title {
+            font-size: 2rem;
+        }
+        
+        .card-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .text-accent {
+            font-size: 1.4rem;
+        }
+        
+        .learn-more-link {
+            font-size: 1.2rem;
+        }
+        
+        .arrow-icon {
+            width: 42px;
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .main-heading {
+            font-size: 3rem;
+        }
+        
+        .sub-heading {
+            font-size: 2.8rem;
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+        }
+        
+        .card-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .text-accent {
+            font-size: 1.3rem;
+        }
+        
+        .learn-more-link {
+            font-size: 1.1rem;
+        }
+        
+        .arrow-icon {
+            width: 38px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .main-heading {
+            font-size: 2.5rem;
+        }
+        .decorative-dots{
+            top: 8%;
+        }
+        
+        .sub-heading {
+            font-size: 2.3rem;
+        }
+        
+        .card-title {
+            font-size: 1.6rem;
+        }
+        
+        .card-text {
+            font-size: 0.95rem;
+        }
+        
+        .text-accent {
+            font-size: 1.2rem;
+        }
+        
+        .learn-more-link {
+            font-size: 1rem;
+        }
+        
+        .arrow-icon {
+            width: 34px;
+        }
+    }
+
     @media (max-width: 991px) {
         .types-section {
-            padding: 20px;
+            padding: 40px 20px;
         }
-
+        .types-section .row{
+            flex-direction: column;
+        }
+        .decorative-dots{
+            top: 5%;
+            max-width: 170px;
+        }
+        .type-card .card-body{
+            padding: 1.5rem;
+        }
+        
         .section-header {
             text-align: left;
             margin-bottom: 2rem;
         }
-
+        
         .main-heading {
-            font-size: 1.25rem;
+            font-size: 1.8rem;
             margin-bottom: 0.25rem;
-            color: #333;
         }
-
+        
         .sub-heading {
-            font-size: 1.1rem;
-            color: #00A99D;
+            font-size: 1.6rem;
+            color: var(--primary-dark-green);
         }
-
+        
         .type-card {
             box-shadow: none;
             border: none;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             background: transparent;
         }
-
-        .type-card:hover {
-            transform: none;
-            box-shadow: none;
-        }
-
+        
         .card-img-top {
-            height: 200px;
-            border-radius: 10px;
-            margin-bottom: 1rem;
+            border-radius: 12px;
+            margin-bottom: 1.2rem;
         }
-
+        
         .card-body {
             padding: 0;
-            background: transparent;
         }
-
+        
         .card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
         }
-
+        
         .card-text {
-            font-size: 0.9rem;
-            color: var(--text-gray);
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
         }
-
+        
         .text-accent {
-            color: var(--primary-dark-green);
-            font-size: 0.9rem;
-            margin: 0.5rem 0;
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
         }
-
+        
         .learn-more-link {
-            font-size: 0.9rem;
-            color: #333;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            margin-top: 1rem;
         }
-
+        
         .arrow-icon {
             width: 32px;
-            height: 23px;
         }
     }
 
     @media (max-width: 767px) {
         .types-section {
-            padding: 40px 0;
+            padding: 30px 15px;
         }
-
+        .decorative-dots{
+            top: 3%;
+            max-width: 170px;
+        }
+        
         .main-heading {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
-
+        
         .sub-heading {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
-
-        .card-body {
-            padding: 1.5rem;
-        }
-
-        .decorative-dots {
-            display: none;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .main-heading {
-            font-size: 1.5rem;
-        }
-
-        .sub-heading {
-            font-size: 1.2rem;
-        }
-
+        
+        
         .card-title {
             font-size: 1.3rem;
         }
+        
+        .arrow-icon {
+            width: 28px;
+        }
+    }
 
+    @media (max-width: 575px) {
+        .types-section {
+            padding: 25px 12px;
+        }
+        .decorative-dots{
+            top: 3%;
+            max-width: 170px;
+        }
+        
+        .main-heading {
+            font-size: 1.4rem;
+        }
+        
+        .sub-heading {
+            font-size: 1.2rem;
+        }
+        
+       
+        
+        .card-title {
+            font-size: 1.2rem;
+        }
+        
         .card-text {
             font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .text-accent {
+            font-size: 1rem;
+        }
+        
+        .learn-more-link {
+            font-size: 0.9rem;
+        }
+        
+        .arrow-icon {
+            width: 24px;
         }
     }
     
@@ -380,6 +497,10 @@ h1,h2,h3,h4,h5,h6,p{
         .types-section {
             padding: 30px 0;
         }
+        .arrow-icon{
+            width: 24px;
+            
+        }
         
         .section-header {
             margin-bottom: 2rem;
@@ -391,11 +512,7 @@ h1,h2,h3,h4,h5,h6,p{
     }
 
     /* Remove decorative dots on mobile */
-    @media (max-width: 991px) {
-        .decorative-dots {
-            display: none;
-        }
-    }
+   
 
     /* Responsive Styles */
   
